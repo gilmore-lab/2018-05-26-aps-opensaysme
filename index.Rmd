@@ -51,8 +51,8 @@ I thank NSF, NICHD, SRCD, and the Sloan Foundation for support.
 
 ## Overview
 
-- Why share?
-- How to share
+- Why share data & materials?
+- How to share data & materials
 - Why open sharing advances psychological science
 
 # Imagine
@@ -154,19 +154,6 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 
 <img src="img/psych-harder-2.jpg" height=550px/>
 
----
-
-<img src="https://cdn-images-1.medium.com/max/1600/1*4UPp3Tc4A32S0WXJ0pWP7g.jpeg" height=500px/>
-
-## The tootbrush problem (Mischel, 2009)
-
----
-
-> "*...psychologists tend to treat other peoples’ theories like toothbrushes; no self-respecting individual wants to use anyone else’s.*"
-
----
-
-> "*The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other’s directly relevant best work.*"
 
 ## Studies are underpowered
 
@@ -194,13 +181,7 @@ As Szucs and Ioannides have shown based on an analysis of more than 10,000 paper
 So, this means that we may not know what we think we know.
 </div>
 
----
-
-<div class="centered">
-<img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/>
-
-...grants, ...students, ...data
-</div>
+## Published papers have errors
 
 ---
 
@@ -222,7 +203,22 @@ So, this means that we may not know what we think we know.
 Statistical reporting errors in the published literature are more common that many might think.
 </div>
 
-## Data sharing far too rare
+## Confusion about data ownership
+
+- Institutions
+- Taxpayers
+- Researchers
+- Participants
+
+## Share findings but not data or materials
+
+---
+
+<div class="centered">
+<img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/>
+
+...grants, ...students, ...data
+</div>
 
 ---
 
@@ -232,22 +228,32 @@ Statistical reporting errors in the published literature are more common that ma
 <small>([Wicherts et al., 2006](http://doi.org/10.1037/0003-066X.61.7.726))</small>
 </div>
 
-## Confusion about data ownership
-
-- Institutions
-- Taxpayers
-- Researchers
-- Participants
-
-# Solutions
+## Can't see the whole elephant
 
 ---
 
-- Mischel 2009
-    - Common tools
-    - Robust, replicable, consequential findings
-    - Boundary crossing and bridge building
-- Widespread open data & materials sharing (Gilmore + a whole lotta folks...)
+<img src="https://cdn-images-1.medium.com/max/1600/1*4UPp3Tc4A32S0WXJ0pWP7g.jpeg" height=500px/>
+
+## The toothbrush problem (Mischel, 2009)
+
+---
+
+> "*...psychologists tend to treat other peoples’ theories like toothbrushes; no self-respecting individual wants to use anyone else’s.*"
+
+---
+
+> "*The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other’s directly relevant best work.*"
+
+
+# Solutions
+
+## Mischel 2009
+
+- Common tools
+- Robust, replicable, consequential findings
+- Boundary crossing and bridge building
+    
+## Open data & materials sharing as the norm not exception
 
 ## Plan for sharing
 
@@ -281,7 +287,7 @@ Statistical reporting errors in the published literature are more common that ma
 
 - Data repository
     - [ICPSR](https://www.icpsr.umich.edu/), [Dataverse](http://dataverse.org), [OSF](https://osf.io), [Dryad](https://) (domain/measure general)
-    - [Databrary](https://databrary.org) (behavioral science)
+    - [Databrary](https://databrary.org) (behavioral science; video/audio ++)
     - [OpenNeuro](https://openneuro.org), [TalkBank](https://talkbank.org), [WordBank](http://wordbank.stanford.edu/) (measure-specific)
 - Institutional repository
 - Supplemental material with article
