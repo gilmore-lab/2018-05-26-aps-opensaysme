@@ -212,13 +212,13 @@ Statistical reporting errors in the published literature are more common that ma
 
 ## Share findings but not data or materials
 
----
+<!-- --- -->
 
-<div class="centered">
-<img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/>
+<!-- <div class="centered"> -->
+<!-- <img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/> -->
 
-...grants, ...students, ...data
-</div>
+<!-- ...grants, ...students, ...data -->
+<!-- </div> -->
 
 ---
 
@@ -253,7 +253,9 @@ Statistical reporting errors in the published literature are more common that ma
 - Robust, replicable, consequential findings
 - Boundary crossing and bridge building
     
-## Open data & materials sharing as the norm not exception
+## Open data & materials sharing 
+
+## ...as the norm not the exception
 
 ## Plan for sharing
 
@@ -313,7 +315,7 @@ Statistical reporting errors in the published literature are more common that ma
 ## How
 
 - "FAIRly"
-- **F**indable, **A**ccesible, **I**nteroperable, and **R**eusable (Wilkinson et al., 2016)
+- **F**indable, **A**ccesible, **I**nteroperable, and **R**eusable [(Wilkinson et al., 2016)](http://dx.doi.org/10.1038/sdata.2016.18)
 
 ## Ethically
 
@@ -332,15 +334,11 @@ Statistical reporting errors in the published literature are more common that ma
 
 # Let's
 
-## build a
+## ...build platforms for discovery
 
->- Robust
->- Transparent
->- Reproducible
->- Powerful
->- Awesome
->- Cumulative
->- Psychological Science
+that will make physicists jealous
+
+## ...acknowledge the elephant in the room
 
 ---
 
@@ -358,9 +356,21 @@ To make the future of big data behavioral science one where we're not just blind
 <img src="http://static.neatorama.com/images/2012-09/girl-hugging-elephant.jpg" height=550px>
 </div>
 
-# Open! (Says me)
+## ...build a
+
+>- Robust
+>- Transparent
+>- Reproducible
+>- Powerful
+>- Cumulative
+>- (Awesome!)
+>- Psychological Science
 
 ---
+
+<img src="https://cdn.shopify.com/s/files/1/0212/6252/products/Screen_Shot_2015-03-31_at_5.10.12_PM_large.png?v=1427892157" height=550px/>
+
+## Open! (Says me)
 
 <video width="600" loop data-autoplay>
   <source src="mov/databrary-splash.mp4" type="video/mp4">
