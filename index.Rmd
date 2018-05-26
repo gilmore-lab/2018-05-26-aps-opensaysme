@@ -1,85 +1,112 @@
 ---
-title: "Open Says Me"
+title: "Open! (Says Me)"
 author: "Rick O. Gilmore"
 date: "`r Sys.time()`"
-css: css/gilmore-ioslides.css
 output:
-  ioslides_presentation:
-    widescreen: true
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: libs
+    incremental: false
+    theme: simple
+    transition: none
+    reveal_plugins: ["notes", "zoom"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: false
+      center: true
+      touch: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+if(!("revealjs" %in% installed.packages()[,1])) {
+  install.packages("revealjs") }
+require("revealjs")
+#require("DiagrammeR")
+
+knitr::opts_chunk$set(echo = FALSE)
 ```
+
+# Prelminaries
 
 ---
 
-<div class="centered">
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=150px>
 <img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=150px>
 </br>
 <img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=150px>
-</br>
-<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p200x200/30742999_10155158496606116_5443541606508527616_n.png?_nc_cat=0&oh=67265a186721fd0a36e640e780743cd4&oe=5B5FD0DB" height=150px/>
+<img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/>
+<img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px />
+
+<div class="notes">
+I thank NSF, NICHD, SRCD, and the Sloan Foundation for support.
 </div>
 
-## Agenda
+---
 
-- Imagine...
-- Barriers and blinders
-- Let's get real
-- Open! Says me
+### Karen Adolph (NYU)
+### Joy Kennedy (Databrary)
+### Jeff Spies (Databrary, 221b.io)
 
-## Imagine
+## Overview
+
+- Why share?
+- How to share
+- Why open sharing advances psychological science
+
+# Imagine
 
 ## ...meta-analyses from your desktop
 
 ---
 
-<div class="centered">
-<video width="800" controls>
+<video width="900" controls data-autoplay>
   <source src="mov/neurosynth-happy.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</div>
+</br>
+<http://neurosynth.org>
 
 ## ...visualization of task data accumulated across studies & labs
 
 ---
 
-<div class="centered">
-<video width="800" controls>
+<video width="900" controls data-autoplay>
   <source src="mov/wordbank-vocabulary.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</div>
+</br>
+<http://wordbank.stanford.edu>
 
-## ...machine-learning assisted audio & video analysis
+## ...machine-learning-assisted analysis
 
 ---
 
-<div class="centered">
-<video height="550" controls>
+<video height="600" controls data-autoplay>
   <source src="mov/Construction.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</div>
 
 *Source*: Ori Ossmy (NYU)
 
-## ..."scriptable" analysis and visualizations from shared data
+## ..."scriptable" analyses and visualizations from centrally stored & shared data
 
 ---
 
-<div class="centered">
-<video width="800" controls>
+<video width="900" controls data-autoplay>
   <source src="mov/summarize_demog.mp4" type="video/mp4">
-</video></div>
+</video>
+</br>
+<http://github.com/PLAY-behaviorome/databraryapi>
 
 ## ...easy downloading and reuse of others' materials
 
-<div class="centered">
-<audio controls>
+---
+
+<img src="https://nyu.databrary.org/slot/15068/-/asset/63850/download?inline=true" height=300px/>
+</br>
+<audio controls data-autoplay>
   <source src="https://nyu.databrary.org/slot/12213/0,15046/asset/46757/download?inline=true" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
@@ -90,28 +117,23 @@ Your browser does not support the audio element.
 </br>
 </br>
 Cole, P.M., Gilmore, R.O., Scherf, K.S. & Perez-Edgar, K. (2016). The Proximal Emotional Environment Project (PEEP). Databrary. http://doi.org/10.17910/B7.248.
-</div>
 
 ## ...reproduction of others' procedures through video protocols
 
 ---
 
-<div class="centered">
-<video width="800" controls>
+<video width="800" controls data-autoplay>
   <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing>
-</div>
 
 ## ...A cumulative psychological science
 
-<div class="centered">
 <a href="https://www.psychologicalscience.org/observer/becoming-a-cumulative-science">
 <img src="img/mischel-cumulative-science.jpg"/>
 </a>
-</div>
 
 ## Where
 
@@ -122,96 +144,156 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 
 # Barriers
 
+## Psychological science is harder than physics
+
 ---
 
-<div class="centered">
 <img src="img/psych-harder-1.jpg" height=550px/>
-</div>
 
 ---
 
-<div class="centered">
 <img src="img/psych-harder-2.jpg" height=550px/>
-</div>
 
 ---
 
-<div class="centered">
 <img src="https://cdn-images-1.medium.com/max/1600/1*4UPp3Tc4A32S0WXJ0pWP7g.jpeg" height=500px/>
-</div>
 
-## The tootbrush problem
+## The tootbrush problem (Mischel, 2009)
+
+---
 
 > "*...psychologists tend to treat other peoples’ theories like toothbrushes; no self-respecting individual wants to use anyone else’s.*"
 
+---
+
 > "*The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other’s directly relevant best work.*"
 
--- Mischel, 2009
+## Studies are underpowered
 
 ---
 
 <div class="centered">
-<img src="img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=500px/>
+<img src="http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" height=500px>
+
+<small>([Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797))</small>
+</div>
+
+<div class="notes">
+As Szucs and Ioannides have shown based on an analysis of more than 10,000 papers in the cognitive neuroscience literature, sample sizes are small, and the probability of false negatives is high, especially for small to medium effect sizes.
 </div>
 
 ---
 
 <div class="centered">
-<img src="img/szucs-ioannidis-title.jpg" width=800px/>
+> "Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature."
+
+<small>([Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797))</small>
+</div>
+
+<div class="notes">
+So, this means that we may not know what we think we know.
 </div>
 
 ---
 
 <div class="centered">
-<img src="img/szucs-ioannidis-2016-fig3.jpg" height=500px/>
+<img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/>
+
+...grants, ...students, ...data
 </div>
 
 ---
 
 <div class="centered">
-<img src="img/ferguson-everybody-knows.jpg" width=800px/>
+<a href="http://doi.org/10.3758/s13428-015-0664-2)">
+<img src="https://raw.githubusercontent.com/gilmore-lab/2018-02-14-quant-dev/master/img/nuijten-etal.jpg" height=500px/>
+</a>
 </div>
+
+---
+
+<div class="centered">
+<img src="https://static-content.springer.com/image/art%3A10.3758%2Fs13428-015-0664-2/MediaObjects/13428_2015_664_Fig3_HTML.gif" height=550px>
+</div>
+
+<small>([Nuijten et al., 2015](http://doi.org/10.3758/s13428-015-0664-2))</small>
+
+<div class="notes">
+Statistical reporting errors in the published literature are more common that many might think.
+</div>
+
+## Data sharing far too rare
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/master/img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=550px>
+
+<small>([Wicherts et al., 2006](http://doi.org/10.1037/0003-066X.61.7.726))</small>
+</div>
+
+## Confusion about data ownership
+
+- Institutions
+- Taxpayers
+- Researchers
+- Participants
 
 # Solutions
 
 ---
 
-### "Common tools" (Mischel 2009)
-
-### "Robust, replicable, consequential findings" (Mischel 2009)
-
-### "Boundary crossing and bridge building" (Mischel 2009)
-
-### Open data and materials sharing (Gilmore + a whole lotta people)
-
-# Get real (practical solutions)
+- Mischel 2009
+    - Common tools
+    - Robust, replicable, consequential findings
+    - Boundary crossing and bridge building
+- Widespread open data & materials sharing (Gilmore + a whole lotta folks...)
 
 ## Plan for sharing
 
-## What
+- From the earliest stages
+- Data Management Plans (NSF and NIH proposals)
+
+## What to share
 
 - Data
-    - and analysis code (R, Python, SPSS, SAS, ...)
+    - & analysis code/scripts (R, Python, SPSS, SAS, ...)
+- Displays (& code to generate)
 - Protocols & procedures
     - Video as gold standard
-- Displays (& code to generate)
 
-## Where
+---
+
+<div class="centered">
+<a href="http://www.apa.org/science/about/psa/2017/10/video-data.aspx">
+<img src="img/video-as-data-doc.jpg" height=600px/>
+</div>
+
+---
+
+<div class="centered">
+<a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki">
+<img src="https://github.com/gilmore-lab/sips-2017-video-reproducibility/blob/master/img/play-wiki.jpg?raw=true" height=500px>
+</a>
+</div>
+
+## Where to share
 
 - Data repository
-    - ICPSR, Dataverse, OSF, Dryad, 
-    - Databrary, OpenNeuro, TalkBank, WordBank
+    - [ICPSR](https://www.icpsr.umich.edu/), [Dataverse](http://dataverse.org), [OSF](https://osf.io), [Dryad](https://) (domain/measure general)
+    - [Databrary](https://databrary.org) (behavioral science)
+    - [OpenNeuro](https://openneuro.org), [TalkBank](https://talkbank.org), [WordBank](http://wordbank.stanford.edu/) (measure-specific)
 - Institutional repository
-- Data paper (e.g. *Nature Scientific Data*)
 - Supplemental material with article
+- Data paper (e.g. *Nature Scientific Data*)
 
 ## With whom
 
 - Public
     - Risk of reidentification
-    - Can you anonymize?
+    - Can you really anonymize?
 - Researchers
-    - ICPSR & Databrary
+    - ICPSR, Databrary, & OpenNeuro
 - People you select & vet
 
 ## When 
@@ -224,39 +306,65 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 
 ## How
 
-- "FAIRly": **F**indable, **A**ccesible, **I**nteroperable, and **R**eusable (Wilkinson et al., 2016)
+- "FAIRly"
+- **F**indable, **A**ccesible, **I**nteroperable, and **R**eusable (Wilkinson et al., 2016)
 
-## Ethical data sharing
+## Ethically
 
-- Ask permission to share (especially sensitive, identifiable data)
+- Ask permission to share (especially for sensitive, identifiable data)
     - Use template language
-    - <https://osf.io/9d5hr/>
+    - Gilmore & Nilsonne, 2017: <https://osf.io/9d5hr/>
 - Don't promise to destroy data
-- Don't restrict future reuses
-- Sharing data maximizes benefits of research participation (Brakewood & Poldack, 2013)
+- Don't unduly restrict future reuses
+- Sharing data maximizes benefits of research participation [(Brakewood & Poldack, 2013)](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040)
 
-# Open! Says me
+## Openly
 
-## Let's build a cumulative, robust, open psychological science
+- Without restriction on others' reuse
+- Without *quid pro quo*, pre-approval, or requirement of co-authorship
+- *With* expectation of ethical use **AND** proper citation
+
+# Let's
+
+## build a
+
+>- Robust
+>- Transparent
+>- Reproducible
+>- Powerful
+>- Awesome
+>- Cumulative
+>- Psychological Science
 
 ---
 
 <div class="centered">
-<video width="800" loop autoplay>
-  <source src="mov/databrary-splash.mp4" type="video/mp4">
-</video></div>
+<img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=550px>
+</div>
+
+<div class="notes">
+To make the future of big data behavioral science one where we're not just blind men studying our small part of the elephant.
+</div>
 
 ---
 
-### [databrary.org](https://databrary.org), @databrary
+<div class="centered">
+<img src="http://static.neatorama.com/images/2012-09/girl-hugging-elephant.jpg" height=550px>
+</div>
 
-### [datavyu.org](https://datavyu.org), @datavyu
+# Open! (Says me)
 
-### rogilmore@psu.edu
+---
 
-### [gilmore-lab.github.io](http://gilmore-lab.github.io)
+<video width="600" loop data-autoplay>
+  <source src="mov/databrary-splash.mp4" type="video/mp4">
+</video>
 
-### <https://github.com/gilmore-lab/2018-05-26-aps-opensaysme/>
+rogilmore@psu.edu
+
+<https://gilmore-lab.github.io>
+
+<https://github.com/gilmore-lab/2018-05-26-aps-opensaysme/>
 
 ---
 
