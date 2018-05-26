@@ -53,7 +53,7 @@ I thank NSF, NICHD, SRCD, and the Sloan Foundation for support.
 
 - Why share data & materials?
 - How to share data & materials
-- Why open sharing advances psychological science
+- Why open sharing of data & materials will advance psychological science
 
 # Imagine
 
@@ -177,10 +177,6 @@ As Szucs and Ioannides have shown based on an analysis of more than 10,000 paper
 <small>([Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797))</small>
 </div>
 
-<div class="notes">
-So, this means that we may not know what we think we know.
-</div>
-
 ## Published papers have errors
 
 ---
@@ -210,15 +206,7 @@ Statistical reporting errors in the published literature are more common that ma
 - Researchers
 - Participants
 
-## Share findings but not data or materials
-
-<!-- --- -->
-
-<!-- <div class="centered"> -->
-<!-- <img src="http://www.clubbinghouse.com/images/photos/covers/20080403153957.jpg" height=450px/> -->
-
-<!-- ...grants, ...students, ...data -->
-<!-- </div> -->
+## Eagerly share findings but not data or materials
 
 ---
 
@@ -228,13 +216,13 @@ Statistical reporting errors in the published literature are more common that ma
 <small>([Wicherts et al., 2006](http://doi.org/10.1037/0003-066X.61.7.726))</small>
 </div>
 
-## Can't see the whole elephant
+## Blinded from seeing the whole elephant
 
 ---
 
 <img src="https://cdn-images-1.medium.com/max/1600/1*4UPp3Tc4A32S0WXJ0pWP7g.jpeg" height=500px/>
 
-## The toothbrush problem (Mischel, 2009)
+## Fall victim to the toothbrush problem (Mischel, 2009)
 
 ---
 
@@ -252,19 +240,21 @@ Statistical reporting errors in the published literature are more common that ma
 - Robust, replicable, consequential findings
 - Boundary crossing and bridge building
     
-## Open data & materials sharing 
+## Make open data & materials sharing 
 
-## ...as the norm not the exception
+## ...the norm not the exception
 
 ## Plan for sharing
 
 - From the earliest stages
 - Data Management Plans (NSF and NIH proposals)
+- Data as a "first order" research product
 
 ## What to share
 
 - Data
     - & analysis code/scripts (R, Python, SPSS, SAS, ...)
+    - Rawest possible (trial-level, individual, ...)
 - Displays (& code to generate)
 - Protocols & procedures
     - Video as gold standard
@@ -278,11 +268,11 @@ Statistical reporting errors in the published literature are more common that ma
 
 ---
 
-<div class="centered">
 <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki">
 <img src="https://github.com/gilmore-lab/sips-2017-video-reproducibility/blob/master/img/play-wiki.jpg?raw=true" height=500px>
 </a>
-</div>
+
+The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing>
 
 ## Where to share
 
@@ -290,9 +280,9 @@ Statistical reporting errors in the published literature are more common that ma
     - [ICPSR](https://www.icpsr.umich.edu/), [Dataverse](http://dataverse.org), [OSF](https://osf.io), [Dryad](https://) (domain/measure general)
     - [Databrary](https://databrary.org) (behavioral science; video/audio ++)
     - [OpenNeuro](https://openneuro.org), [TalkBank](https://talkbank.org), [WordBank](http://wordbank.stanford.edu/) (measure-specific)
-- Institutional repository
 - Supplemental material with article
 - Data paper (e.g. *Nature Scientific Data*)
+- Institutional repository
 
 ## With whom
 
@@ -315,15 +305,23 @@ Statistical reporting errors in the published literature are more common that ma
 
 - "FAIRly"
 - **F**indable, **A**ccesible, **I**nteroperable, and **R**eusable [(Wilkinson et al., 2016)](http://dx.doi.org/10.1038/sdata.2016.18)
+    - Easier to find in repository
+    - Interoperable formats
+    - Codebooks
 
 ## Ethically
 
 - Ask permission to share (especially for sensitive, identifiable data)
     - Use template language
-    - Gilmore & Nilsonne, 2017: <https://osf.io/9d5hr/>
-- Don't promise to destroy data
+    - [(Gilmore & Nilsonne, 2017)](https://osf.io/9d5hr/)
+- Don't promise to destroy data (but GDPR?)
 - Don't unduly restrict future reuses
-- Sharing data maximizes benefits of research participation [(Brakewood & Poldack, 2013)](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040)
+
+---
+
+>"*the principles of human subject research require an analysis of both risks and benefits...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.*"
+
+<small>([Brakewood & Poldack, 2013](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040))</small>
 
 ## Openly
 
@@ -361,6 +359,7 @@ To make the future of big data behavioral science one where we're not just blind
 >- Transparent
 >- Reproducible
 >- Powerful
+>- Openly shared
 >- Cumulative
 >- (Awesome!)
 >- Psychological Science
