@@ -28,7 +28,7 @@ require("revealjs")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Prelminaries
+# Preliminaries
 
 ---
 
